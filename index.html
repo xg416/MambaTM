@@ -1,0 +1,365 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67835289-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67835289-3');
+</script>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/video_comparison.js"></script>
+<script src="js/app.js"></script>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    /* font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+    font-family: "Avenir", sans-serif;
+    font-weight:400;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .column {
+    float: left;
+    /* width: 50%; */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+
+
+<html>
+  <head>
+
+	<title>MambaTM</title>
+	<meta property="og:title" content="MambaTM" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="3000" />
+	<meta property="og:image:height" content="800" />
+  </head>
+
+  <body>
+    <br><br><br><br>
+          <center>
+          	<span style="font-size:38px">Learning Phase Distortion with Selective State Space Models for Video Turbulence Mitigation</span>
+            <br><br>
+		  <table align=center width=800px>
+	  			  <tr>
+	  	        <td align=center width=100px>
+	  					  <center>
+	  						<span style="font-size:16px"><a href="http://xg416.github.io">Xingguang Zhang</a></span>
+		  		  		</center>
+		  		  	</td>
+	  	        <td align=center width=100px>
+	  					  <center>
+	  						<span style="font-size:16px"><a href="https://web.ics.purdue.edu/~nchimitt/index.html">Nicholas Chimitt</a></span>
+		  		  		</center>
+		  		  	</td>
+	  	        <td align=center width=100px>
+                <center>
+	  						<span style="font-size:16px"><a href="https://engineering.purdue.edu/ChanGroup/people.html">Xijun Wang</a></span>
+		  		  		</center>
+		  		  	</td>
+	  	        <td align=center width=100px>
+                <center>
+	  						<span style="font-size:16px"><a href="https://yuanyuspace.cn/about/">Yu Yuan</a></span>
+		  		  		</center>
+		  		  	</td>
+	  	        <td align=center width=100px>
+	  					  <center>
+	  						<span style="font-size:16px"><a href="https://engineering.purdue.edu/ChanGroup/stanleychan.html">Stanley Chan</a></span>
+		  		  		</center>
+		  		  	</td>
+			  </table>
+        <br>
+	  		  <table align=center width=550px style="font-size:20px;">
+	  			  <tr>
+              <td align=center width=100px>
+              <center>
+                <span><a href="https://arxiv.org/abs/2401.04244"> [Paper]</a></span>
+              </center>
+              </td>
+
+              <td align=center width=100px>
+              <center>
+                <span><a href="https://github.com/xg416/MambaTM"> [Code]</a></span>
+              </center>
+              </td>
+
+              <td align=center width=100px>
+                <center>
+                  <span><a href="https://app.box.com/s/xbx844bppqls2cqi74apac49iln0ztbz"> [ATSyn-static]</a></span>
+                </center>
+              </td>
+
+              <td align=center width=100px>
+                <center>
+                  <span><a href="https://app.box.com/s/b1mhcatitus3poo2tgcelsd4rmw9o35o"> [ATSyn-dynamic]</a></span>
+                </center>
+              </td>
+
+              <td align=center width=100px>
+                <center>
+                  <span><a href="https://engineering.purdue.edu/ChanGroup/project_turbulence.html"> [Relevant]</a></span>
+                </center>
+              </td>
+            </tr>
+			  </table>
+        <!-- ======================================================================= <br>
+        <span style="font-size:20px">under review</span> -->
+      </center>
+
+  		  <br>
+  		  <table align=center width=1100px>
+  			  <tr>
+            <td width=1050px>
+    					<center>
+    	          <a href="figs/VAE.png"><img src = "figs/VAE.png" width="70%"></img></href></a><br>
+  					  </center>
+            </td>
+          </tr>
+  		  </table>
+      	<br><br>
+
+		  <hr>
+
+
+      <center>
+        <h1>Abstract</h1>
+        <p> 
+          Atmospheric turbulence is a major source of image degradation in long-range imaging systems. 
+          Although numerous deep learning-based turbulence mitigation (TM) methods have been proposed, 
+          many are slow, memory-hungry, and do not generalize well. In the spatial domain, methods based 
+          on convolutional operators have a limited receptive field, so they cannot handle a large spatial 
+          dependency required by turbulence. In the temporal domain, methods relying on self-attention can, 
+          in theory, leverage the lucky effects of turbulence, but their quadratic complexity makes it difficult 
+          to scale to many frames. Traditional recurrent aggregation methods face parallelization challenges.
+
+          In this paper, we present a new TM method based on two concepts: (1) A turbulence mitigation 
+          network based on the Selective State Space Model (MambaTM). MambaTM provides a global receptive 
+          field in each layer across spatial and temporal dimensions while maintaining linear computational 
+          complexity. (2) Learned Latent Phase Distortion (LPD). LPD guides the state space model. Unlike 
+          classical Zernike-based representations of phase distortion, the new LPD map uniquely captures 
+          the actual effects of turbulence, significantly improving the model’s capability to estimate degradation
+           by reducing the ill-posedness. Our proposed method exceeds current state-of-the-art networks on various 
+           synthetic and real-world TM benchmarks with significantly faster inference speed. 
+        <br><br>
+		  </table>
+
+		  <hr>
+
+      <center>
+        <h1>Video Results</h1>
+        <p>Videos are from the <a href="https://arxiv.org/abs/2211.01917"> URG-T </a> and <a href="https://arxiv.org/abs/2211.01917"> BRIAR</a> 
+          dataset, all subjects give the consent to show their images.</p> 
+        <p>If videos are not played correctly, please consider to use Chrome or download them</p>
+        <div class="video-compare-container" id="G00380_compare_videoDiv">
+          <video class="video" id="G00380_compare_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/G00380.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00380_compare_videoMerge"></canvas>
+        </div>
+        <br>
+        <div class="video-compare-container" id="G00071_compare_videoDiv">
+          <video class="video" id="G00071_compare_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/G00071.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_compare_videoMerge"></canvas>
+        </div>
+        <br>
+
+        <div class="video-compare-container" id="URG_MambaTM_videoDiv">
+          <video class="video" id="URG_MambaTM_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/URG_MambaTM.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_MambaTM_videoMerge"></canvas>
+        </div>
+        <br>
+
+        <p> Compare with DATUM (CVPR 2024) and Turb-Seg-Res (CVPR 2024) </p>
+        <div class="video-compare-container" id="URG_DATUM_videoDiv">
+          <video class="video" id="URG_DATUM_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/URG_DATUM.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_DATUM_videoMerge"></canvas>
+        </div>
+        <br>
+        <div class="video-compare-container" id="URG_TSR_videoDiv">
+          <video class="video" id="URG_TSR_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/URG_TSR.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="URG_TSR_videoMerge"></canvas>
+        </div>
+        <br>
+	<p> The LPD-based re-degraded results </p>
+        <!-- <div class="video-compare-container" id="G00071_compare_new_videoDiv">
+          <video class="video" id="G00071_compare_new_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/G00071_new.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_compare_new_videoMerge"></canvas>
+        </div>
+        <br> -->
+        <br>
+      </center>
+
+      <hr>
+
+      <center>
+      
+      <hr>
+      <h1> visual comparsion on static scene images</h1>
+      <table align=center width=1100px>
+        <tr>
+          <td width=1050px>
+            <center>
+              <a href="figs/otis.png"><img src = "figs/otis.png" width="70%"></img></href></a><br>
+            </center>
+          </td>
+        </tr>
+    
+        <tr>
+          <td width=1050px>
+            <center>
+              <a href="figs/text_compare.png"><img src = "figs/text_compare.png" width="70%"></img></href></a><br>
+            </center>
+          </td>
+        </tr>
+      </table>
+
+
+      <hr>
+  		  <!-- <table align=center width=550px> -->
+  		  <table align=center width=1100px>
+	 		<center><h1>MambaTM architecture</h1></center>
+       <center><span class="image"><img src="figs/MambaTM.png" alt="" width="800"/></span></center>
+       <br><br>
+  		  </table>
+		  
+
+			</left>
+		</td>
+			 </tr>
+		</table>
+
+		<br><br>
+
+
+</body>
+</html>
