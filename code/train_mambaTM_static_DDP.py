@@ -27,7 +27,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 def get_args():
     parser = argparse.ArgumentParser(description='Train the UNet on images and restoration')
     parser.add_argument('--iters', type=int, default=400000, help='Number of epochs')
-    parser.add_argument('--batch-size', '-b', dest='batch_size', metavar='B', type=int, default=8, help='Batch size')
+    parser.add_argument('--batch-size', '-b', dest='batch_size', metavar='B', type=int, default=8, help='Batch size per GPU')
     parser.add_argument('--patch-size', '-ps', dest='patch_size', type=int, default=256, help='Batch size')
     parser.add_argument('--print-period', '-pp', dest='print_period', type=int, default=1000, help='number of iterations to save checkpoint')
     parser.add_argument('--val-period', '-vp', dest='val_period', type=int, default=5000, help='number of iterations for validation')
@@ -35,7 +35,7 @@ def get_args():
     parser.add_argument('--warmup_iters', type=int, default=5000, help='warm up iterations')
     parser.add_argument('--rt_weight', type=float, default=0.2, help='returb module LR weight')
     parser.add_argument('--num_frames', type=int, default=16, help='number of frames for the model')
-    parser.add_argument('--num_workers', type=int, default=16, help='number of workers in dataloader')
+    parser.add_argument('--num_workers', type=int, default=4, help='number of workers in dataloader per process')
     parser.add_argument('--train_path', type=str, default='~/lab/data/TurbulenceData/static_new/train_static', help='path of training imgs')
     parser.add_argument('--val_path', type=str, default='~/lab/data/TurbulenceData/static_new/test_static', help='path of validation imgs')  
     parser.add_argument('--load', '-f', type=str, default=False, help='Load model from a .pth file')

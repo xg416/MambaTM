@@ -80,7 +80,7 @@ def cleanup_distributed():
 def get_args():
     parser = argparse.ArgumentParser(description='Train the UNet on images and restoration')
     parser.add_argument('--iters', type=int, default=400000, help='Number of epochs')
-    parser.add_argument('--batch-size', '-b', dest='batch_size', metavar='B', type=int, default=8, help='Batch size')
+    parser.add_argument('--batch-size', '-b', dest='batch_size', metavar='B', type=int, default=8, help='Batch size per GPU')
     parser.add_argument('--patch-size', '-ps', dest='patch_size', type=int, default=256, help='Patch size')
     parser.add_argument('--print-period', '-pp', dest='print_period', type=int, default=1000, help='Iterations between checkpointing')
     parser.add_argument('--val-period', '-vp', dest='val_period', type=int, default=5000, help='Iterations for validation')
@@ -89,7 +89,7 @@ def get_args():
     parser.add_argument('--lpips_weight', type=float, default=0.01, help='lpips weight')
     parser.add_argument('--rt_weight', type=float, default=0.2, help='Weight of returb loss')
     parser.add_argument('--num_frames', type=int, default=16, help='Number of frames for the model')
-    parser.add_argument('--num_workers', type=int, default=16, help='Number of workers in dataloader')
+    parser.add_argument('--num_workers', type=int, default=4, help='Number of workers in dataloader per process')
     parser.add_argument('--train_path', type=str, default='/home/zhan3275/data/lmdb_ATSyn/train_lmdb/', help='Path of training imgs')
     parser.add_argument('--train_info', type=str, default='/home/zhan3275/data/lmdb_ATSyn/train_lmdb/train_info.json', help='Info of training imgs')
     parser.add_argument('--val_path', type=str, default='/home/zhan3275/data/lmdb_ATSyn/test_lmdb/', help='Path of validation imgs')
