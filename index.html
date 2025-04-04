@@ -293,7 +293,7 @@
         </div>
         <br>
 
-        <p> Compare with DATUM (CVPR 2024) and Turb-Seg-Res (CVPR 2024) </p>
+        <p> Compare with <b>DATUM (CVPR 2024)</b> and <b>Turb-Seg-Res (CVPR 2024)</b></p>
         <div class="video-compare-container" id="URG_DATUM_videoDiv">
           <video class="video" id="URG_DATUM_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
             <source src="videos/URG_DATUM.mp4" type="video/mp4">
@@ -308,14 +308,23 @@
           <canvas height=0 class="videoMerge" id="URG_TSR_videoMerge"></canvas>
         </div>
         <br>
-	<p> The LPD-based re-degraded results </p>
-        <!-- <div class="video-compare-container" id="G00071_compare_new_videoDiv">
-          <video class="video" id="G00071_compare_new_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
-            <source src="videos/G00071_new.mp4" type="video/mp4">
+      <p style="font-size: 24px;"> The LPD-based re-degraded results </p>
+      <p> restoration performance </p>
+        <div class="video-compare-container" id="G00071_input_restore_videoDiv">
+          <video class="video" id="G00071_input_restore_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/input_restore.mp4" type="video/mp4">
           </video>
-          <canvas height=0 class="videoMerge" id="G00071_compare_new_videoMerge"></canvas>
+          <canvas height=0 class="videoMerge" id="G00071_input_restore_videoMerge"></canvas>
         </div>
-        <br> -->
+        <br>
+        <p> Re-degradation based on the estimated LPD with restored video above </p>
+        <div class="video-compare-container" id="G00071_input_returb_videoDiv">
+          <video class="video" id="G00071_input_returb_video" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+            <source src="videos/input_returb.mp4" type="video/mp4">
+          </video>
+          <canvas height=0 class="videoMerge" id="G00071_input_returb_videoMerge"></canvas>
+        </div>
+        <br>
         <br>
       </center>
 
